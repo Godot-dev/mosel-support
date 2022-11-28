@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MOSEL PROGRAMMING LANGUAGE",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#main-keywords"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#reserved-words"
+		},
+		{
+			"include": "#digits"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"comments": {
+			"begin": "!",
+		    "name": "comment.mosel",
+			"end": "\n"
+		},
+		"main-keywords": {
+			"name": "markup.heading.mosel",
+			"match": "\\b(declarations|end-declarations|model|end-model)\\b"
+		},
+		"keywords": {
+			"name": "keyword.other.mosel",
+			"match": "\\b(end-if|end-do|and|any|array|as|boolean|break|case|constant|count|counter|div|do|dynamic|elif|else|end|evaluation|false|forall|forward|from|function|hashmap|if|imports|in|include|initialisations|initializations|integer|inter|is|is_binary|is_continuous|is_free|is_integer|is_partint|is_semcont|is_semint|is_sos1|is_sos2|linctr|list|max|min|mod|model|mpproblem|mpvar|namespace|next|not|nsgroup|nssearch|of|options|or|package|parameters|procedure|public|prod|range|real|record|repeat|requirements|return|set|shared|string|sum|then|to|true|union|until|uses|version|while|with)\\b"
+		},
+		"reserved-words": {
+			"name": "entity.name.function.member.mosel",
+			"match": "\\b(create|exists|delcell|isdynamic|finalize|ceil|floor|round|abs|exp|log|ln|sqrt|cos|sin|arctan|isodd|isfinit|isinf|isnan|random|setrandseed|minlist|maxlist|exportprob|fopen|fclose|fselect|getfid|getfname|getreadcnt|iseof|fflush|fskipline|fwrite|fwriteln|read|readln|write|writeln|strfmt|substr|getcoeff|setcoeff|getvars|gettype|settype|makesos1|makesos2|sethidden|ishidden|setname|setrange|getnbdim|getsize|getelt|getfirst|getlast|findfirst|findlast|gethead|gettail|cutelt|cutfirst|cutlast|cuthead|cuttail|reverse|getreverse|splithead|splittail|getobjval|getsol|getrcost|getslack|getact|getdual|exit|getparam|setparam|localsetparam|restoreparam|currentdate|currenttime|timestamp|bitflip|bitneg|bitset|bitshift|bittest|bitval|geteltype|getstruct|gettypeid|isdefined|asproc|assert|compare|datablock|dumpcallstack|memoryuse|newmuid|publish|unpublish|reset|setioerr|setmatherr|versionnum|versionstr)\\b"
+		},
+		"digits": {
+			"name": "constant.numeric",
+			"match": "\\d"
+		},
+		"strings": {
+			"name": "string.quoted.double.mosel",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mosel",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.mos"
+}

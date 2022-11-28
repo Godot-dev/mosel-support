@@ -1,0 +1,32 @@
+{
+  "name": "mosel-support",
+  "displayName": "mosel-support",
+  "description": "support to mosel x-press language",
+  "version": "0.0.1",
+  "publisher":"edenporte",
+  "author": {
+    "name": "Eden Porte",
+    "email": "edenporte@gmail.com",
+    "url": "https://fr.linkedin.com/in/porte-eden-4770a3167"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "mosel",
+      "aliases": ["MOSEL PROGRAMMING LANGUAGE", "mosel"],
+      "extensions": ["mos"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "mosel",
+      "scopeName": "source.mos",
+      "path": "./syntaxes/mosel.tmLanguage.json"
+    }]
+  }
+}
