@@ -10,6 +10,10 @@
     "url": "https://fr.linkedin.com/in/porte-eden-4770a3167"
   },
   "icon": "icon.png",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/Godot-dev/mosel-support.git"
+	},
   "engines": {
     "vscode": "^1.73.0"
   },
