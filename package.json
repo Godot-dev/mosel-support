@@ -2,7 +2,7 @@
   "name": "mosel-support",
   "displayName": "mosel-support",
   "description": "support to mosel x-press language",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher":"edenporte",
   "author": {
     "name": "Eden Porte",
@@ -15,7 +15,7 @@
 		"url": "https://github.com/Godot-dev/mosel-support.git"
 	},
   "engines": {
-    "vscode": "^1.73.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Programming Languages"
