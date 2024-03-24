@@ -23,9 +23,18 @@
 	],
 	"repository": {
 		"comments": {
-			"begin": "!",
-		    "name": "comment.mosel",
-			"end": "\n"
+			"patterns": [
+				{
+					"begin": "!",
+					"end": "\n",
+					"name": "comment.line"
+				},
+				{
+					"begin": "(!",
+					"end": "!)",
+					"name": "comment.block"
+				}
+			]
 		},
 		"multi-line-comments": {
 			"begin":"\\(!",
