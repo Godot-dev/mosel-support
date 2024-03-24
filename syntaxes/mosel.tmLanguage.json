@@ -3,6 +3,9 @@
 	"name": "MOSEL PROGRAMMING LANGUAGE",
 	"patterns": [
 		{
+			"include": "#multi-line-comments"
+		},
+		{
 			"include": "#comments"
 		},
 		{
@@ -22,24 +25,15 @@
 		}
 	],
 	"repository": {
-		"comments": {
-			"patterns": [
-				{
-					"begin": "!",
-					"end": "\n",
-					"name": "comment.line"
-				},
-				{
-					"begin": "(!",
-					"end": "!)",
-					"name": "comment.block"
-				}
-			]
-		},
 		"multi-line-comments": {
 			"begin":"\\(!",
 		    "name": "comment.mosel",
 			"end":"!\\)"
+		},
+		"comments": {
+			"begin": "!",
+			"end": "\n",
+			"name": "comment.mosel"	
 		},
 		"main-keywords": {
 			"name": "markup.heading.mosel",
