@@ -28,9 +28,9 @@
 			"end": "\n"
 		},
 		"multi-line-comments": {
-			"begin": "(!",
+			"begin":"\\(!",
 		    "name": "comment.mosel",
-			"end": "!)"
+			"end":"!\\)"
 		},
 		"main-keywords": {
 			"name": "markup.heading.mosel",
