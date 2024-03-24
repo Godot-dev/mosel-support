@@ -27,6 +27,11 @@
 		    "name": "comment.mosel",
 			"end": "\n"
 		},
+		"multi-line-comments": {
+			"begin": "(!",
+		    "name": "comment.mosel",
+			"end": "!)"
+		},
 		"main-keywords": {
 			"name": "markup.heading.mosel",
 			"match": "\\b(parameters|end-parameters|declarations|end-declarations|model|end-model)\\b"
